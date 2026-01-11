@@ -5,9 +5,9 @@ import { tjanster } from "./data/tjanster";
 
 export default function Home() {
   return (
-    <div className="flex min-h-screen font-sans">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col bg-white sm:items-start">
-        <section>
+    <div className="flex min-h-screen font-sans justify-center">
+      <main className="flex min-h-screen w-full justify-center flex-col bg-white sm:items-start">
+        <section className="w-full">
           <div className="relative flex flex-col items-center justify-center px-6 py-32 gap-14">
             <img src="/gata.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
             <h1 className="text-4xl text-center z-10"><b>Samtalsstöd vid relationstrauma </b>
@@ -21,15 +21,16 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-6 py-12 flex flex-col gap-16 bg-[#fdf4ee]">
+        <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-16 bg-[#fdf4ee]">
           {/* Intro */}
-          <div className="flex flex-col gap-16">
-            <div className="flex flex-col gap-8">
+          <div className="flex flex-col md:flex-row gap-32 relative flex-wrap">
+            <div className="flex flex-col gap-8  flex-1">
               <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" />
               <p className="text-neutral-900 text-center text-xl font-bold italic">“Narcissistens största misstag är att underskatta empatens förmåga att återhämta sig”</p>
-            </div>
-            <div className="flex flex-col gap-8 text-neutral-900 text-xl/8">
               <img className="rounded-3xl" src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/f166239b-87e6-4075-9f3a-b1167335b271/Sk%C3%A4rmklipp.jpg?format=1500w" alt="" />
+            </div>
+
+            <div className="flex flex-col gap-8 text-neutral-900 text-xl/8 flex-2">
               <p className="font-medium">Välkommen,
                 <br /><br />
                 Som legitimerad psykoterapeut har jag specialiserat mig på relationella kriser och familjetrauman. Med över 20 års erfarenhet har jag arbetat med trauma i olika kliniska miljöer, inklusive Röda Korsets behandlingscenter för tortyr- och krigsskadade, företagshälsovården och i min egen privata praktik. Genom åren har jag hjälpt människor att bearbeta smärtsamma livserfarenheter och hitta vägar mot läkning och återhämtning.
@@ -56,9 +57,11 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-6 py-12 flex flex-col gap-16 items-center ">
-          <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/a307dc7e-f15a-42ec-a0e7-6a966f59e4c9/image-asset.jpg?format=1500w" alt="" className="rounded-full w-42 h-42 object-cover" />
-          <p className="text-neutral-900 text-xl/8 italic font-bold ">
+        <section className="px-6 py-12 md:py-32 flex flex-col gap-16 items-center mx-auto relative">
+          <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/a307dc7e-f15a-42ec-a0e7-6a966f59e4c9/image-asset.jpg?format=1500w"
+            alt=""
+            className="rounded-full w-42 md:w-[700px] aspect-square object-cover" />
+          <p className="text-neutral-900 text-xl/8 md:text-2xl italic font-bold md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-2/3 md:-translate-y-1/2">
             “Varningsflaggor handlar inte bara om den andre personen. När du börjar ljuga för dig själv om vem de är för att undvika att förlora dem.
             <br />
             <br />
@@ -66,10 +69,10 @@ export default function Home() {
           </p>
         </section>
 
-        <section className="px-6 py-12 flex flex-col gap-16 border-t border-gray-800">
+        <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-16 border-t border-gray-800">
           {/* Intro */}
-          <div className="flex flex-col gap-16">
-            <h2 className="text-neutral-900 text-4xl font-medium">Relationer definierar inte vem du är, eller vem du blivit</h2>
+          <div className="flex flex-col gap-16 max-w-3xl">
+            <h2 className="text-neutral-900 text-4xl md:text-6xl font-medium">Relationer definierar inte vem du är, eller vem du blivit</h2>
             <div className="flex flex-col gap-8 text-neutral-900 text-xl/8">
               <p className=" font-semibold">
                 Relationer kan vara utmanande, och svåra erfarenheter kan förändra hur vi ser på oss själva, andra och livet omkring oss. Destruktiva relationer kan lämna oss med ett brustet hjärta och känslor av maktlöshet. Vi tystnar, avskärmar oss och känner oss ensamma. Men även i den djupaste smärtan finns möjligheten till förändring.
@@ -93,17 +96,17 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-6 py-12 flex flex-col gap-32 border-t border-gray-800 bg-[#fdf4ee]">
-          <div className="flex flex-col gap-24">
+        <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-32 border-t border-gray-800 bg-[#fdf4ee]">
+          <div className="grid grid-cols-2 gap-24">
             {tjanster.map(tjanst => {
               return (
                 <div key={tjanst.slug} className="flex flex-col gap-8 text-neutral-900">
-                  <img src={tjanst.image} alt="" className="w-full h-full object-cover aspect-square" />
+                  <img src={tjanst.image} alt="" className="w-full object-cover aspect-square" />
                   <h3 className="text-2xl font-medium">{tjanst.name}</h3>
                   <p className="text-lg -mt-4">{tjanst.description}</p>
                   <PrimaryButton
                     title={`Läs mer om ${tjanst.name}`}
-                    link={tjanst.link}
+                    link={`/tjanster/${tjanst.slug}`}
                     white
                   />
                 </div>
@@ -113,30 +116,32 @@ export default function Home() {
         </section>
 
 
-        <section className="px-6 py-12 flex flex-col gap-14 border-t border-gray-800">
-          <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1733892149214-SL5DXQ69QUHF4H0UKE0P/image-asset.jpeg?format=1500w" alt="" className="w-62 object-cover aspect-square rounded-full self-center" />
-          <h2 className="text-4xl font-medium text-neutral-900">Boka ditt första samtal</h2>
-          <p className="-mt-8 text-neutral-900 text-lg">
-            Mitt mål som terapeut är att erbjuda dig en trygg och stödjande miljö där du kan utforska dina tankar och känslor.
-            <br />
-            <br />
-            <b>För att göra det enklare att ta nästa steg erbjuder jag ett kostnadsfritt första samtal (45-60 minuter). Det är helt utan krav och ger dig chansen att känna efter om jag och mitt arbetssätt är rätt för dig.</b>
-            <br />
-            <br />
-            <b>Klicka vidare till bokningssidan och välj en tid som passar dig.</b> Jag ser fram emot att mötas och prata om vad du behöver just nu. Det är aldrig för sent att ta hand om dig själv och skapa det liv du önskar.
-            <br />
-            <br />
-            <b>Efter vårt första samtal kan du, om du väljer att fortsätta, boka individuella samtal, förlängda individuella samtal eller par- och familjesamtal.</b> Priser och sessionstider är tydligt angivna för att du ska känna dig informerad och trygg i ditt beslut. Flexibilitet erbjuds också i form av möten personligen (IRL) eller digitalt via FaceTime, WhatsApp eller mobil, beroende på vad som passar dig bäst.
-            <br />
-            <br />
-            Tack för ditt förtroende!
-          </p>
-          <PrimaryButton
-            title="Tidsbokning"
-            link="/kontakt"
-            className=""
-          />
-
+        <section className="max-w-[1400px] mx-auto px-6 py-12 flex flex-col md:flex-row gap-14 border-t border-gray-800 ">
+          <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1733892149214-SL5DXQ69QUHF4H0UKE0P/image-asset.jpeg?format=1500w" alt=""
+            className="w-62 object-cover aspect-square rounded-full self-center md:w-148" />
+          <div className=" text-neutral-900 text-lg md:text-xl flex flex-col gap-4">
+            <h2 className="text-4xl font-medium text-neutral-900">Boka ditt första samtal</h2>
+            <p className="mt-4">
+              Mitt mål som terapeut är att erbjuda dig en trygg och stödjande miljö där du kan utforska dina tankar och känslor.
+            </p>
+            <p className="font-semibold">
+              För att göra det enklare att ta nästa steg erbjuder jag ett kostnadsfritt första samtal (45-60 minuter). Det är helt utan krav och ger dig chansen att känna efter om jag och mitt arbetssätt är rätt för dig.
+            </p>
+            <p>
+              <span className="font-semibold">Klicka vidare till bokningssidan och välj en tid som passar dig.</span> Jag ser fram emot att mötas och prata om vad du behöver just nu. Det är aldrig för sent att ta hand om dig själv och skapa det liv du önskar.
+            </p>
+            <p>
+              Efter vårt första samtal kan du, om du väljer att fortsätta, boka individuella samtal, förlängda individuella samtal eller par- och familjesamtal. Priser och sessionstider är tydligt angivna för att du ska känna dig informerad och trygg i ditt beslut. Flexibilitet erbjuds också i form av möten personligen (IRL) eller digitalt via FaceTime, WhatsApp eller mobil, beroende på vad som passar dig bäst.
+              <br />
+              <br />
+              Tack för ditt förtroende!
+            </p>
+            <PrimaryButton
+              title="Tidsbokning"
+              link="/kontakt"
+              className="mt-8"
+            />
+          </div>
         </section>
       </main>
     </div >

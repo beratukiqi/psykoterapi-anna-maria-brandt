@@ -23,10 +23,13 @@ export default async function Tjanst({ params }: { params: { slug: string } }) {
                 </div>
               </div>
 
-              <PrimaryButton
-                title={tjanst.ctaTitle}
-                link={tjanst.ctaLink}
-              />
+              <div className="flex flex-col gap-2 items-center">
+                <PrimaryButton
+                  title={tjanst.ctaTitle}
+                  link={tjanst.ctaLink}
+                />
+                <p className="text-neutral-900 text-sm">Länken tar dig vidare till Bokadirekt</p>
+              </div>
             </>
           ) : (
             <div className="flex flex-col gap-12 text-xl/8 text-neutral-900">
