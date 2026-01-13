@@ -38,21 +38,26 @@ const fragorOchSvar = [
 ]
 export default function FragorOchSvar() {
   return (
-    <div className="flex min-h-screen font-sans">
-      <main className="flex min-h-screen w-full max-w-3xl flex-col bg-white sm:items-start">
-        <section>
-          <div className="relative flex flex-col items-center justify-center px-6 py-34 gap-14">
-            <img src="/gata.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
+    <div className="flex min-h-screen font-sans bg-white">
+      <main className="flex min-h-screen mx-auto flex-col w-full bg-white sm:items-start">
+        <section className="w-full">
+          <div className="relative w-full flex flex-col items-center justify-center px-6 py-34 gap-14">
+            <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1698585321666-V6DYNI4JPXFMAUXU9HNG/image-asset.jpeg?format=2500w" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
             <h1 className="text-4xl text-center z-10 font-medium">Frågor & svar</h1>
           </div>
         </section>
 
-        <section className="px-6 py-12 pb-24 flex flex-col gap-8">
+        <section className="px-6 py-12 pb-24 flex flex-col gap-8 max-w-3xl mx-auto">
           {/* Intro */}
           {fragorOchSvar.map((item, index) => (
             <div key={index} className="flex flex-col text-neutral-900">
               <h2 className="text-xl font-bold">{item.question}</h2>
               <p className="text-lg">{item.answer}</p>
+              {index === 0 && (
+                <div className="hidden md:block mt-6">
+                  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.46997642643!2d18.05620927762092!3d59.33746281036909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e296940001%3A0xb35170e8f21ad828!2sPsykoterapimottagning%20Anna%20Maria%20Brandt!5e1!3m2!1sen!2sse!4v1768277147845!5m2!1sen!2sse" width="100%" height="400" loading="lazy"></iframe>
+                </div>
+              )}
             </div>
           ))}
 

@@ -31,7 +31,7 @@ export default function Header() {
 
   return (
     <header className="bg-[#fdf4ee] font-sans">
-      <nav aria-label="Global" className="mx-auto flex max-w-7xl items-center justify-between py-10 px-8 lg:px-8">
+      <nav aria-label="Global" className="mx-auto flex max-w-[1800px] items-center justify-between py-10 px-8 lg:px-8">
         <CompanyLogo />
 
         <div className="flex lg:hidden">
@@ -44,9 +44,13 @@ export default function Header() {
             <Bars3Icon aria-hidden="true" className="size-10" />
           </button>
         </div>
-        <PopoverGroup className="hidden lg:flex lg:gap-x-12">
+        <PopoverGroup className="hidden lg:flex lg:gap-x-6">
+          <a href="/" className="text-sm/6 md:text-lg font-semibold text-gray-900">
+            Hem
+          </a>
+
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 font-semibold text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 md:text-lg font-semibold text-gray-900">
               Tjänster
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
             </PopoverButton>
@@ -59,14 +63,13 @@ export default function Header() {
                 {tjanster.map((item) => (
                   <div
                     key={item.slug}
-                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 hover:bg-gray-50"
+                    className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 md:text-lg hover:bg-gray-50"
                   >
                     <div className="flex-auto">
                       <a href={`/tjanster/${item.slug}`} className="block font-semibold text-gray-900">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
-                      <p className="mt-1 text-gray-600">{item.description}</p>
                     </div>
                   </div>
                 ))}
@@ -74,17 +77,22 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="/om-mig" className="text-sm/6 font-semibold text-gray-900">
+          <a href="/om-mig" className="text-sm/6 md:text-lg font-semibold text-gray-900">
             Om mig
           </a>
-          <a href="/kontakt" className="text-sm/6 font-semibold text-gray-900">
+          <a href="/fragor-och-svar" className="text-sm/6 md:text-lg font-semibold text-gray-900">
+            Frågor och svar
+          </a>
+          <a href="/kontakt" className="text-sm/6 md:text-lg font-semibold text-gray-900">
             Kontakt
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
-          <a href="#" className="text-sm/6 font-semibold text-gray-900">
-            Boka kostnadsfritt första samtal <span aria-hidden="true">&rarr;</span>
-          </a>
+          <PrimaryButton
+            title="Boka kostnadsfritt första samtal"
+            link="/kontakt"
+            className="ml-8"
+          />
         </div>
       </nav>
       <Dialog open={mobileMenuOpen} onClose={setMobileMenuOpen} className="lg:hidden font-sans">

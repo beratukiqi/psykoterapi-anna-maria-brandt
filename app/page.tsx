@@ -8,9 +8,9 @@ export default function Home() {
     <div className="flex min-h-screen font-sans justify-center">
       <main className="flex min-h-screen w-full justify-center flex-col bg-white sm:items-start">
         <section className="w-full">
-          <div className="relative flex flex-col items-center justify-center px-6 py-32 gap-14">
+          <div className="relative flex flex-col items-center justify-center px-6 py-32 gap-14 h-[700px]">
             <img src="/gata.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
-            <h1 className="text-4xl text-center z-10"><b>Samtalsstöd vid relationstrauma </b>
+            <h1 className="text-4xl lg:text-6xl max-w-5xl mx-auto text-center z-10"><b>Samtalsstöd vid relationstrauma </b>
               när något gått sönder på insidan</h1>
             <PrimaryButton
               title="Boka kostnadsfritt första samtal"
@@ -21,10 +21,10 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-16 bg-[#fdf4ee]">
+        <section className="w-full px-6 py-12 flex flex-col gap-16 bg-[#fdf4ee]">
           {/* Intro */}
-          <div className="flex flex-col md:flex-row gap-32 relative flex-wrap">
-            <div className="flex flex-col gap-8  flex-1">
+          <div className="max-w-7xl mx-auto py-24 flex flex-col md:flex-row gap-32 relative flex-wrap">
+            <div className="flex flex-col gap-8 flex-1">
               <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" />
               <p className="text-neutral-900 text-center text-xl font-bold italic">“Narcissistens största misstag är att underskatta empatens förmåga att återhämta sig”</p>
               <img className="rounded-3xl" src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/f166239b-87e6-4075-9f3a-b1167335b271/Sk%C3%A4rmklipp.jpg?format=1500w" alt="" />
@@ -57,7 +57,7 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="px-6 py-12 md:py-32 flex flex-col gap-16 items-center mx-auto relative">
+        <section className="bg-white px-6 py-12 md:py-32 flex flex-col gap-16 items-center mx-auto relative">
           <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/a307dc7e-f15a-42ec-a0e7-6a966f59e4c9/image-asset.jpg?format=1500w"
             alt=""
             className="rounded-full w-42 md:w-[700px] aspect-square object-cover" />
@@ -71,7 +71,7 @@ export default function Home() {
 
         <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-16 border-t border-gray-800">
           {/* Intro */}
-          <div className="flex flex-col gap-16 max-w-3xl">
+          <div className="flex flex-col gap-16 max-w-3xl py-24">
             <h2 className="text-neutral-900 text-4xl md:text-6xl font-medium">Relationer definierar inte vem du är, eller vem du blivit</h2>
             <div className="flex flex-col gap-8 text-neutral-900 text-xl/8">
               <p className=" font-semibold">
@@ -96,8 +96,8 @@ export default function Home() {
           </div>
         </section>
 
-        <section className="max-w-7xl mx-auto px-6 py-12 flex flex-col gap-32 border-t border-gray-800 bg-[#fdf4ee]">
-          <div className="grid grid-cols-2 gap-24">
+        <section className="px-6 py-12 w-full py-32 flex flex-col gap-32 border-t border-gray-800 bg-[#fdf4ee]">
+          <div className="grid grid-cols-2 gap-24 max-w-7xl mx-auto">
             {tjanster.map(tjanst => {
               return (
                 <div key={tjanst.slug} className="flex flex-col gap-8 text-neutral-900">
@@ -116,11 +116,11 @@ export default function Home() {
         </section>
 
 
-        <section className="max-w-[1400px] mx-auto px-6 py-12 flex flex-col md:flex-row gap-14 border-t border-gray-800 ">
+        <section className="max-w-[1400px] mx-auto px-6 py-24 flex flex-col md:flex-row gap-14 border-t border-gray-800 ">
           <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1733892149214-SL5DXQ69QUHF4H0UKE0P/image-asset.jpeg?format=1500w" alt=""
             className="w-62 object-cover aspect-square rounded-full self-center md:w-148" />
           <div className=" text-neutral-900 text-lg md:text-xl flex flex-col gap-4">
-            <h2 className="text-4xl font-medium text-neutral-900">Boka ditt första samtal</h2>
+            <h2 className="text-4xl lg:text-5xl font-medium text-neutral-900">Boka ditt första samtal</h2>
             <p className="mt-4">
               Mitt mål som terapeut är att erbjuda dig en trygg och stödjande miljö där du kan utforska dina tankar och känslor.
             </p>

@@ -1,6 +1,6 @@
 export default function CompanyLogo() {
   return (
-    <a href="/" className="space-y-8 flex gap-2 sm:gap-4 items-center">
+    <a href="/" className="space-y-8 flex gap-2 sm:gap-4 items-center mr-12">
       <img
         alt="Company name"
         src="/favicon-am-text.png"
