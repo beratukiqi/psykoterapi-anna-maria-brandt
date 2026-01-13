@@ -1,4 +1,6 @@
 import PrimaryButton from "@/app/components/PrimaryButton";
+import WaveSeparator from "@/app/components/WaveSeperator";
+import WaveSeparatorMobile from "@/app/components/WaveSeperatorMobile";
 import { tjanster } from "@/app/data/tjanster";
 
 export default async function Tjanst({ params }: { params: { slug: string } }) {
@@ -9,7 +11,7 @@ export default async function Tjanst({ params }: { params: { slug: string } }) {
   return (
     <div className="flex min-h-screen font-sans">
       <main className="flex min-h-screen w-full flex-col bg-white sm:items-start">
-        <section className="max-w-[1400px] mx-auto px-6 py-12 pb-24 flex flex-col gap-12">
+        <section className="max-w-[1400px] mx-auto px-6 py-12 pb-42 flex flex-col gap-12">
           {/* Intro */}
           {tjanst ? (
             <>
@@ -47,6 +49,29 @@ export default async function Tjanst({ params }: { params: { slug: string } }) {
             </div>
           )}
         </section>
+
+        <div>
+          <div className="hidden md:block">
+            <WaveSeparator
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={50}
+            />
+          </div>
+          <div className="md:hidden">
+            <WaveSeparatorMobile
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={80}
+            />
+          </div>
+        </div>
       </main>
     </div >
   );

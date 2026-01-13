@@ -1,14 +1,16 @@
 import PrimaryButton from "../components/PrimaryButton";
+import WaveSeparator from "../components/WaveSeperator";
+import WaveSeparatorMobile from "../components/WaveSeperatorMobile";
 
 export default function OmMig() {
   return (
     <div className="flex min-h-screen font-sans">
       <main className="flex min-h-screen w-full flex-col bg-white sm:items-start">
-        <section className="px-6 py-12 pb-24 max-w-7xl mx-auto">
+        <section className="px-6 py-12 md:py-32 pb-42 max-w-7xl mx-auto">
           {/* Intro */}
           <div className="flex flex-col gap-12 text-xl/8 text-neutral-900">
             <div>
-              <h2 className="text-4xl font-medium mb-4">Mitt yrke blev min livsstil</h2>
+              <h2 className="text-4xl lg:text-6xl font-medium mb-4">Mitt yrke blev min livsstil</h2>
             </div>
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
@@ -36,6 +38,29 @@ export default function OmMig() {
             </p>
           </div>
         </section>
+
+        <div>
+          <div className="hidden md:block">
+            <WaveSeparator
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={50}
+            />
+          </div>
+          <div className="md:hidden">
+            <WaveSeparatorMobile
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={100}
+            />
+          </div>
+        </div>
       </main>
     </div >
   );

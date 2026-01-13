@@ -1,11 +1,13 @@
 import { EnvelopeIcon, PhoneIcon } from "@heroicons/react/20/solid";
 import PrimaryButton from "../components/PrimaryButton";
+import WaveSeparator from "../components/WaveSeperator";
+import WaveSeparatorMobile from "../components/WaveSeperatorMobile";
 
 export default function Kontakt() {
   return (
     <div className="flex font-sans">
       <main className="flex w-full flex-col bg-white sm:items-start">
-        <section className="px-6 py-24 max-w-7xl mx-auto">
+        <section className="px-6 py-12 md:py-32 pb-42 max-w-7xl mx-auto">
           {/* Intro */}
           <div className="flex flex-col gap-12 text-xl/8 text-neutral-900">
             <h1 className="text-4xl font-medium mb-4">Välkommen att kontakta mig</h1>
@@ -28,6 +30,30 @@ export default function Kontakt() {
 
           </div>
         </section>
+
+        <div>
+          <div className="hidden md:block">
+            <WaveSeparator
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={50}
+            />
+          </div>
+          <div className="md:hidden">
+            <WaveSeparatorMobile
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={80}
+            />
+          </div>
+        </div>
+
       </main>
     </div >
   );

@@ -1,4 +1,6 @@
 import PrimaryButton from "../components/PrimaryButton";
+import WaveSeparator from "../components/WaveSeperator";
+import WaveSeparatorMobile from "../components/WaveSeperatorMobile";
 
 
 const fragorOchSvar = [
@@ -47,7 +49,7 @@ export default function FragorOchSvar() {
           </div>
         </section>
 
-        <section className="px-6 py-12 pb-24 flex flex-col gap-8 max-w-3xl mx-auto">
+        <section className="px-6 py-12 md:py-32 pb-42 flex flex-col gap-8 max-w-3xl mx-auto">
           {/* Intro */}
           {fragorOchSvar.map((item, index) => (
             <div key={index} className="flex flex-col text-neutral-900">
@@ -67,6 +69,29 @@ export default function FragorOchSvar() {
             className="mt-16"
           />
         </section>
+
+        <div>
+          <div className="hidden md:block">
+            <WaveSeparator
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={50}
+            />
+          </div>
+          <div className="md:hidden">
+            <WaveSeparatorMobile
+              topColor="transparent"
+              bottomColor="#fcf4ef"
+              strokeColor="#e5e5e5"
+              strokeWidth={5}
+              flipX={true}
+              overlap={80}
+            />
+          </div>
+        </div>
 
       </main>
     </div >
