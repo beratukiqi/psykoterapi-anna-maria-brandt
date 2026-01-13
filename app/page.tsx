@@ -11,7 +11,7 @@ export default function Home() {
       <main className="flex min-h-screen w-full justify-center flex-col bg-white sm:items-start">
         <section className="w-full">
           <div className="relative flex flex-col items-center justify-center px-6 py-32 gap-14 h-[600px] md:h-[800px]">
-            <img src="/gata.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
+            <img src="https://anna-maria-brandt.s3.eu-north-1.amazonaws.com/Gata.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
             <h1 className="text-4xl lg:text-6xl max-w-5xl mx-auto text-center z-10"><b>Samtalsstöd vid relationstrauma </b>
               när något gått sönder på insidan</h1>
             <PrimaryButton
