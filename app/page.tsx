@@ -52,7 +52,7 @@ export default function Home() {
             <div className="flex flex-col gap-8 flex-1">
               <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" />
               <p className="text-neutral-900 text-center text-xl font-bold italic">“Narcissistens största misstag är att underskatta empatens förmåga att återhämta sig”</p>
-              <img className="rounded-3xl" src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/f166239b-87e6-4075-9f3a-b1167335b271/Sk%C3%A4rmklipp.jpg?format=1500w" alt="" />
+              <img className="rounded-3xl" src="/images/brygga.jpg" alt="" />
             </div>
 
             <div className="flex flex-col gap-8 text-neutral-900 text-xl/8 flex-2">
@@ -106,7 +106,7 @@ export default function Home() {
         </div>
 
         <section className="bg-white px-6 py-12 md:py-32 flex flex-col gap-16 items-center mx-auto relative">
-          <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/a307dc7e-f15a-42ec-a0e7-6a966f59e4c9/image-asset.jpg?format=1500w"
+          <img src="/images/brygga2.jpg"
             alt=""
             className="rounded-full w-42 md:w-[700px] aspect-square object-cover" />
           <p className="text-neutral-900 text-xl/8 md:text-2xl italic font-bold md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-2/3 md:-translate-y-1/2">

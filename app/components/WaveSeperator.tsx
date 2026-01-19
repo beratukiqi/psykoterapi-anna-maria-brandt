@@ -17,6 +17,7 @@ const WaveSeparator = ({
   return (
     <div
       style={{
+        overflow: "hidden",
         position: "relative",
         height,
         marginTop: -overlap,

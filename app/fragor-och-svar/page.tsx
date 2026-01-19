@@ -44,7 +44,8 @@ export default function FragorOchSvar() {
       <main className="flex min-h-screen mx-auto flex-col w-full bg-white sm:items-start">
         <section className="w-full">
           <div className="relative w-full flex flex-col items-center justify-center px-6 py-34 gap-14">
-            <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1698585321666-V6DYNI4JPXFMAUXU9HNG/image-asset.jpeg?format=2500w" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
+            {/* <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1698585321666-V6DYNI4JPXFMAUXU9HNG/image-asset.jpeg?format=2500w" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" /> */}
+            <img src="/images/vagor.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
             <h1 className="text-4xl text-center z-10 font-medium">Frågor & svar</h1>
           </div>
         </section>
