@@ -34,18 +34,59 @@ export const tjanster: Service[] = [
   {
     slug: "emdr-trauma",
     name: "EMDR & Trauma",
-    title: "EMDR är en psykoterapimetod som kan hjälpa människor att minska besvären efter upplevelser från det förgångna och som kan störa i det dagliga livet.",
+    title: "EMDR är en kraftfull metod för att bearbeta olika former av trauma, oavsett om de inträffat under barndomen eller i nutid.",
     image: "/images/emdr.webp",
-    description: "EMDR är en psykoterapimetod som kan hjälpa människor att minska besvären efter upplevelser från det förgångna och som kan störa i det dagliga livet.",
-    content: <><p>Du kan ha upplevt dig sviken. Eller så känner du att din partner inte längre förstår dig och dina livsdrömmar. <br /><br />
-      Kanske har du svårt att skapa en bra kontakt med dina barn. Relationen till din expartner, tillika barnens andre förälder, dina egna föräldrar, eller svärföräldrar kan vara krånglig. Du kanske känner dig utmattad eller orolig över att saker aldrig kommer att förändras. Oavsett vad du upplever, märker du hur detta påverkar ditt liv om det är:</p>
+    description: "EMDR är en kraftfull metod för att bearbeta olika former av trauma, oavsett om de inträffat under barndomen eller i nutid.",
+    content: <div className="flex flex-col gap-4">
+      <p className="font-semibold">
+        Denna specifika psykoterapimetod hjälper vid psykiska utmaningar som social fobi, panikångest, OCD och depression, och ger även stöd vid svåra livshändelser som sorg och allvarlig sjukdom. Många har sett positiva resultat, vilket gör att de kan frigöra sig från det förflutnas påverkan och leva mer fritt.
+        <br /><br />
+        EMDR kan också vara till stor nytta för att lösa psykologiska och relationella problem, såsom anknytningssvårigheter och utmaningar i emotionellt otrygga relationer.
+      </p>
 
-      <ul className="list-disc ml-6 mt-8">
-        <li>ständiga bråk och oenigheter, även över små saker</li>
-        <li>känslor av spänning, frustration och uppgivenhet</li>
-        <li>oförmåga att komma över tidigare oförrätter eller lösa ångerfulla händelser</li>
-      </ul>
-    </>,
+      <h2 className="text-3xl font-medium mb-4 mt-12">
+        Syftet med EMDR
+      </h2>
+      <p>
+        Målet med EMDR är att hjälpa dig att känslomässigt bearbeta och avlasta trauma, så att du kan prata om och reflektera över händelsen utan att negativa känslor och självkänsla hindrar dig. Terapin anpassas efter dina individuella behov och problem.
+      </p>
+
+      <h2 className="text-3xl font-medium mb-4 mt-12">
+        Hur går det till?
+      </h2>
+      <p>
+        Tillsammans utforskar vi noggrant bakgrunden till dina svårigheter och bedömer om EMDR är en lämplig metod för dig. Om det bedöms som en bra väg framåt börjar vi förberedelserna. Under behandlingen arbetar vi ofta med ögonrörelser, där du följer mina fingerrörelser med blicken. Det finns även alternativ till ögonrörelser om du föredrar det. Efter varje sekvens av ögonrörelser får du möjlighet att dela dina upplevelser, vilket ofta leder till nya insikter. Vi övervakar hur obehaget förändras under sessionerna, och jag använder olika skattningar för att arbeta med din självuppfattning. Dessutom finns det lugnande övningar som skapar en trygg atmosfär under terapin.
+      </p>
+
+      <h2 className="text-3xl font-medium mb-4 mt-12">
+        Hur lång tid tar en behandling?
+      </h2>
+      <p>
+        En EMDR-behandling avslutas ofta efter 5-10 sessioner, men ibland kan det ta längre tid. EMDR kan även ingå i ett längre psykoterapiförlopp.
+      </p>
+
+      <h2 className="text-3xl font-medium mb-4 mt-12">
+        Fakta och historik om EMDR
+      </h2>
+      <p>
+        EMDR utvecklades av psykologen Francine Shapiro, som under många år skapade metoden för att bearbeta traumatiska minnen och mildra deras psykologiska effekter. Tack vare hennes arbete erkänns EMDR idag som en av de främsta metoderna för behandling av PTSD av flera hälsoorganisationer, inklusive WHO och Socialstyrelsen i Sverige.
+      </p>
+
+      <h2 className="text-3xl font-medium mb-4 mt-12">
+        EMDR - En mångfacetterad metod
+      </h2>
+      <p>
+        Shapiro integrerade insikter från flera psykoterapeutiska inriktningar, såsom psykodynamisk terapi och KBT, med fokus på hur traumatiska händelser påverkar oss. EMDR skiljer sig från andra metoder genom sina standardiserade procedurer och användning av bilaterala stimuli, som ögonrörelser. Dessa rörelser påverkar kommunikationen mellan olika delar av hjärnan, vilket kan minska ångest och underlätta bearbetningen av traumatiska minnen.
+      </p>
+
+
+      <h2 className="text-3xl font-medium mb-4 mt-12">
+        Varför används bilateral stimulering i EMDR?
+      </h2>
+      <p>
+        Forskning visar att bilaterala stimuli, som ögonrörelser, underlättar skapandet av nya associationsbanor till traumatiska minnen, vilket leder till nyinlärning. Det hjälper individer att stanna kvar i minnet av traumat och bearbeta det på ett mer konstruktivt sätt.
+      </p>
+    </div>,
     ctaTitle: "Boka kostnadsfritt första samtal",
     ctaLink: "https://www.bokadirekt.se/boka-tjanst/psykoterapimottagning-anna-maria-brandt-47408/emdr-terapi-2994508",
   },

@@ -17,7 +17,7 @@ export default async function Tjanst({ params }: { params: { slug: string } }) {
             <>
               <div className="flex flex-col gap-12 text-xl/8 text-neutral-900">
                 <div className="grid grid-cols-1 lg:grid-cols-2 lg:gap-16">
-                  <img className="w-full h-full object-cover lg:order-2" src={tjanst.image} alt="" />
+                  <img className="w-full h-full object-cover  max-h-[800px] lg:order-2" src={tjanst.image} alt="" />
                   <div className="lg:order-1">
                     <h1 className="text-xl font-medium mt-8 lg:mt-24 mb-4 text-[#b78462]">{tjanst.name}</h1>
                     <p className="text-4xl font-medium mb-18">{tjanst.title}</p>
