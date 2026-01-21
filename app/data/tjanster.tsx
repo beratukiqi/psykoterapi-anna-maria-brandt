@@ -19,15 +19,16 @@ export const tjanster: Service[] = [
     // image: "https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/6e557d76-6d23-43da-a837-4ef9be2bc428/image-asset.jpg",
     image: "/images/parsamtal.jpg",
     description: "Psykodynamisk psykoterapi fokuserar på varje individs unika egenskaper och syftar till förändring.",
-    content: <><p>Du kan ha upplevt dig sviken. Eller så känner du att din partner inte längre förstår dig och dina livsdrömmar. <br /><br />
-      Kanske har du svårt att skapa en bra kontakt med dina barn. Relationen till din expartner, tillika barnens andre förälder, dina egna föräldrar, eller svärföräldrar kan vara krånglig. Du kanske känner dig utmattad eller orolig över att saker aldrig kommer att förändras. Oavsett vad du upplever, märker du hur detta påverkar ditt liv om det är:</p>
+    content:
+      <div className="flex flex-col gap-6">
+        <p>
+          Psykologisk och psykoterapeutisk behandling inleds ofta med några samtal där vi tillsammans får möjligheten att utforska de problem som du står inför, samt bakgrunden och dina förväntningar på behandlingen. Under dessa inledande samtal kommer vi att prata om vad som känns viktigt för dig och diskutera möjliga behandlingsvägar och tidsramar.
+        </p>
 
-      <ul className="list-disc ml-6 mt-8">
-        <li>ständiga bråk och oenigheter, även över små saker</li>
-        <li>känslor av spänning, frustration och uppgivenhet</li>
-        <li>oförmåga att komma över tidigare oförrätter eller lösa ångerfulla händelser</li>
-      </ul>
-    </>,
+        <p>
+          Tillsammans kommer vi överens om innehåll, mål och riktning för vårt arbete. Utifrån din unika situation och önskemål, kommer vi att noggrant överväga vilken metod som passar dig bäst.
+        </p>
+      </div>,
     ctaTitle: "Boka kostnadsfritt första samtal",
     ctaLink: "https://www.psykoterapi.se/psykoterapi-samtalsterapi",
   },
