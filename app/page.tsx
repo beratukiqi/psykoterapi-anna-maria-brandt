@@ -206,6 +206,15 @@ export default function Home() {
               )
             })}
           </div>
+
+          <div className="flex flex-col gap-2 text-neutral-900 justify-center items-center">
+            <p className="text-2xl font-semibold">
+              Jag samarbetar med <a className="underline text-blue-900" target="_blank" href="https://socialtstod.stockholm/hitta-familjeradgivning/familjeradgivning/allvarligt-talat-stockholms-familjeradgivare">Allvarligt talat</a> och <a className="underline text-blue-900" target="_blank" href="https://www.parsamtal.com">Parsamtal</a>
+            </p>
+            <p className="text-lg">
+              Vi har avtal med Stockholms stad, Lidingö stad, Nacka, Täby och Danderyd.
+            </p>
+          </div>
         </section>
 
         <div>

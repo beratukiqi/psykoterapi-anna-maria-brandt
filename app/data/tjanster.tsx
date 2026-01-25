@@ -22,11 +22,23 @@ export const tjanster: Service[] = [
     content:
       <div className="flex flex-col gap-6">
         <p>
-          Psykologisk och psykoterapeutisk behandling inleds ofta med några samtal där vi tillsammans får möjligheten att utforska de problem som du står inför, samt bakgrunden och dina förväntningar på behandlingen. Under dessa inledande samtal kommer vi att prata om vad som känns viktigt för dig och diskutera möjliga behandlingsvägar och tidsramar.
+          När vi mår bra är vi i harmoni med vårt känsloliv. Känslorna fungerar som en inre kompass, som vägleder oss och hjälper oss att göra hälsosamma val. Genom att förstå våra känslor kan vi utforska vår nyfikenhet, välja vilka vi vill omge oss med, känna när våra gränser överskrids, bearbeta förluster och hantera misstag i relationer.
         </p>
 
         <p>
-          Tillsammans kommer vi överens om innehåll, mål och riktning för vårt arbete. Utifrån din unika situation och önskemål, kommer vi att noggrant överväga vilken metod som passar dig bäst.
+          Psykisk ohälsa uppstår ofta när vi lär oss att vissa känslor är oacceptabla. Detta kan leda till att olika känslotillstånd utlöser en rädslorespons, vilket visar sig som ångest. Ångest är ett obehagligt tillstånd som vi strävar efter att undvika, och för detta syfte utvecklar vårt psyke olika försvarsmekanismer. Dessa mekanismer kan ta sig uttryck i form av ältande tankar, självkritik, rationaliseringar, katastroftankar, tillbakadragande eller självdestruktiva beteenden. Ofta är våra strategier för att undvika obehag omedvetna, djupt rotade i oss. Här träder jag in; jag finns här för att hjälpa dig upptäcka och förstå dessa mönster.
+        </p>
+
+        <p>
+          Genom livet ställs vi inför perioder av psykisk påfrestning. Ibland navigerar vi framgångsrikt genom dessa utmaningar på egen hand, men det är också vanligt att vi fastnar och upprepar destruktiva mönster, både i hur vi relaterar till oss själva och till andra. I dessa stunder kan det vara avgörande att söka hjälp för att komma vidare.
+        </p>
+
+        <p>
+          Ångest och undvikande beteenden samverkar och bidrar till psykiskt lidande, och hur detta lidande tar sig uttryck kan variera kraftigt beroende på ångestens intensitet och de hämmande strategier vi utvecklar.
+        </p>
+
+        <p>
+          I vår terapiprocess kommer vi arbeta tillsammans för att identifiera och bearbeta dina undvikande strategier. Jag hjälper dig att hantera din ångest och att möta de känslor du har hållit ifrån dig. Målet är att återknyta kontakten med din inre kompass, så att du kan må bättre. För att detta ska fungera är det viktigt att vi bygger en trygg relation präglad av tillit och öppenhet.
         </p>
       </div>,
     ctaTitle: "Boka kostnadsfritt första samtal",
@@ -127,22 +139,22 @@ export const tjanster: Service[] = [
     ctaTitle: "Boka kostnadsfritt första samtal",
     ctaLink: "https://www.bokadirekt.se/boka-tjanst/psykoterapimottagning-anna-maria-brandt-47408/privat-parterapi-1859192",
   },
-  {
-    slug: "familjeradgivning",
-    name: "Familjerådgivning",
-    title: "Behöver du reparera din relation med din partner eller någon annan närstående?",
-    image: "/images/parterapi.jpg",
-    description: "Familjerådgivning är en form av terapi som fokuserar på att hjälpa familjer att förstå och hantera problem och konflikter.",
-    content: <><p>Du kan ha upplevt dig sviken. Eller så känner du att din partner inte längre förstår dig och dina livsdrömmar. <br /><br />
-      Kanske har du svårt att skapa en bra kontakt med dina barn. Relationen till din expartner, tillika barnens andre förälder, dina egna föräldrar, eller svärföräldrar kan vara krånglig. Du kanske känner dig utmattad eller orolig över att saker aldrig kommer att förändras. Oavsett vad du upplever, märker du hur detta påverkar ditt liv om det är:</p>
+  // {
+  //   slug: "familjeradgivning",
+  //   name: "Familjerådgivning",
+  //   title: "Behöver du reparera din relation med din partner eller någon annan närstående?",
+  //   image: "/images/parterapi.jpg",
+  //   description: "Familjerådgivning är en form av terapi som fokuserar på att hjälpa familjer att förstå och hantera problem och konflikter.",
+  //   content: <><p>Du kan ha upplevt dig sviken. Eller så känner du att din partner inte längre förstår dig och dina livsdrömmar. <br /><br />
+  //     Kanske har du svårt att skapa en bra kontakt med dina barn. Relationen till din expartner, tillika barnens andre förälder, dina egna föräldrar, eller svärföräldrar kan vara krånglig. Du kanske känner dig utmattad eller orolig över att saker aldrig kommer att förändras. Oavsett vad du upplever, märker du hur detta påverkar ditt liv om det är:</p>
 
-      <ul className="list-disc ml-6 mt-8">
-        <li>ständiga bråk och oenigheter, även över små saker</li>
-        <li>känslor av spänning, frustration och uppgivenhet</li>
-        <li>oförmåga att komma över tidigare oförrätter eller lösa ångerfulla händelser</li>
-      </ul>
-    </>,
-    ctaTitle: "Boka kostnadsfritt första samtal",
-    ctaLink: "https://www.bokadirekt.se/boka-tjanst/psykoterapimottagning-anna-maria-brandt-47408/familjeradgivning-stockholm-stad-1859193",
-  }
+  //     <ul className="list-disc ml-6 mt-8">
+  //       <li>ständiga bråk och oenigheter, även över små saker</li>
+  //       <li>känslor av spänning, frustration och uppgivenhet</li>
+  //       <li>oförmåga att komma över tidigare oförrätter eller lösa ångerfulla händelser</li>
+  //     </ul>
+  //   </>,
+  //   ctaTitle: "Boka kostnadsfritt första samtal",
+  //   ctaLink: "https://www.bokadirekt.se/boka-tjanst/psykoterapimottagning-anna-maria-brandt-47408/familjeradgivning-stockholm-stad-1859193",
+  // }
 ]
