@@ -194,7 +194,7 @@ export default function Home() {
             {tjanster.map(tjanst => {
               return (
                 <div key={tjanst.slug} className="flex flex-col gap-8 text-neutral-900">
-                  <img src={tjanst.image} alt="" className="w-full object-cover aspect-square" />
+                  {/* <img src={tjanst.image} alt="" className="w-full object-cover aspect-square" /> */}
                   <h3 className="text-2xl font-medium">{tjanst.name}</h3>
                   <p className="text-lg -mt-4">{tjanst.description}</p>
                   <PrimaryButton
