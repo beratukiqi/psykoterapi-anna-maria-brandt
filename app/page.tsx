@@ -4,6 +4,7 @@ import PrimaryButton from "./components/PrimaryButton";
 import { tjanster } from "./data/tjanster";
 import WaveSeparator from "./components/WaveSeperator";
 import WaveSeparatorMobile from "./components/WaveSeperatorMobile";
+import UnderlineHeader from "./components/UnderlineHeader";
 
 export default function Home() {
   return (
@@ -143,11 +144,13 @@ export default function Home() {
         <section className="w-full px-6 py-12 flex flex-col gap-16 bg-[#fdf4ee]">
           {/* Intro */}
           <div className="flex flex-col max-w-7xl mx-auto gap-16 py-24">
-            <h2 className="text-neutral-900 text-4xl md:text-6xl font-medium">Relationer definierar inte vem du är, eller vem du blivit</h2>
+            <UnderlineHeader as="h2" text="Relationer definierar inte vem du är, eller vem du blivit" />
             <div className="flex flex-col gap-8 text-neutral-900 text-xl/8">
               <p className=" font-semibold">
                 Relationer kan vara utmanande, och svåra erfarenheter kan förändra hur vi ser på oss själva, andra och livet omkring oss. Destruktiva relationer kan lämna oss med ett brustet hjärta och känslor av maktlöshet. Vi tystnar, avskärmar oss och känner oss ensamma. Men även i den djupaste smärtan finns möjligheten till förändring.
               </p>
+
+
               <p>
                 Hur vi hanterar relationsstress och trauma är individuellt. Många trampar vatten i åratal, lever på små smulor av omsorg och fastnar i känslomässig stagnation. Men att bara överleva är inte samma sak som att leva. För att ta oss vidare behöver vi bli sedda, förstådda och lyssnade på.
               </p>
@@ -155,7 +158,6 @@ export default function Home() {
                 Det är viktigt att släppa hoppet om att andra - som en narcissistisk partner - ska förändras. I stället kan vi välja att rikta vårt hopp inåt, mot oss själva. Vi kan återfå tilliten till människor och lära oss att sätta gränser för att skydda vår egen hälsa och frihet. Förändring börjar med insikten att vi är värda mer än att gå i cirklar runt någon med giftiga drag.
               </p>
               <p>
-
                 Du är inte ensam. Att ta det första steget mot att återta makten över ditt liv är början på en ny resa - en där du sätter dig själv och din framtid i fokus.
               </p>
             </div>
@@ -244,7 +246,7 @@ export default function Home() {
             <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1733892149214-SL5DXQ69QUHF4H0UKE0P/image-asset.jpeg?format=1500w" alt=""
               className="w-62 object-cover aspect-square rounded-full self-center md:w-148" />
             <div className=" text-neutral-900 text-lg md:text-xl flex flex-col gap-4">
-              <h2 className="text-4xl lg:text-5xl font-medium text-neutral-900">Boka ditt första samtal</h2>
+              <UnderlineHeader as="h2" text="Boka ditt första samtal" className="text-4xl lg:text-5xl font-medium text-neutral-900" />
               <p className="mt-4">
                 Mitt mål som terapeut är att erbjuda dig en trygg och stödjande miljö där du kan utforska dina tankar och känslor.
               </p>

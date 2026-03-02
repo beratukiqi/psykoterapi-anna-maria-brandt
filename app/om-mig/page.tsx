@@ -1,4 +1,5 @@
 import PrimaryButton from "../components/PrimaryButton";
+import UnderlineHeader from "../components/UnderlineHeader";
 import WaveSeparator from "../components/WaveSeperator";
 import WaveSeparatorMobile from "../components/WaveSeperatorMobile";
 
@@ -9,9 +10,7 @@ export default function OmMig() {
         <section className="px-6 py-12 md:py-32 pb-42 max-w-7xl mx-auto">
           {/* Intro */}
           <div className="flex flex-col gap-12 text-xl/8 text-neutral-900">
-            <div>
-              <h1 className="text-4xl lg:text-6xl font-medium mb-4">Om mig</h1>
-            </div>
+            <UnderlineHeader as="h1" text="Om mig" />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">
               <img className="rounded-3xl order-1 lg:order-2" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" />
