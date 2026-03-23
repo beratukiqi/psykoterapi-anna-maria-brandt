@@ -89,6 +89,7 @@ export default function Header() {
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <PrimaryButton
+            white
             title="Boka kostnadsfritt första samtal"
             link="/kontakt"
             className="ml-8"
@@ -158,6 +159,7 @@ export default function Header() {
               </div>
               <div className="py-6 mt-auto">
                 <PrimaryButton
+                  white
                   title="Boka kostnadsfritt första samtal"
                   link="#"
                 />
