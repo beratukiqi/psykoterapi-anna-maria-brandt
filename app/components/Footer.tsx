@@ -8,12 +8,12 @@ export default function Footer() {
           {/* Logo */}
           <CompanyLogo />
           {/* Links */}
-          <div className="mt-16 flex flex-col xl:mt-0 text-neutral-900 gap-1">
+          <div className="mt-16 flex flex-col xl:mt-0 text-[#727272] gap-1">
             <p className="font-bold text-xl">Adress: <span className="font-normal text-neutral-600">Wallingatan 3B, 5 tr. 111 60 Stockholm</span></p>
             <p className="font-bold text-xl">E-post: <a href="mailto:info@annamariabrandt.se" className="font-normal text-neutral-600 underline">info@annamariabrandt.se</a></p>
             <p className="font-bold text-xl">Mobil: <a href="tel:0723284424" className="font-normal text-neutral-600 underline">0723284424</a></p>
           </div>
-          <div className="mt-16 flex flex-col xl:mt-0 text-neutral-900 gap-1">
+          <div className="mt-16 flex flex-col xl:mt-0 text-[#727272] gap-1">
             <p className="font-semibold text-xl">Följ:</p>
             <a href="https://www.instagram.com/annamariabrandt/" className="font-semibold text-lg underline">Instagram</a>
             <a href="https://www.facebook.com/annamariabrandt/" className="font-semibold text-lg underline">Facebook</a>

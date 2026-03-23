@@ -53,7 +53,7 @@ export default function FragorOchSvar() {
         <section className="px-6 py-12 md:py-32 pb-42 flex flex-col gap-8 max-w-3xl mx-auto">
           {/* Intro */}
           {fragorOchSvar.map((item, index) => (
-            <div key={index} className="flex flex-col text-neutral-900">
+            <div key={index} className="flex flex-col text-[#727272]">
               <h2 className="text-xl font-bold">{item.question}</h2>
               <p className="text-lg">{item.answer}</p>
               {index === 0 && (

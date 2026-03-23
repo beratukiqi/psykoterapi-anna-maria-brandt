@@ -6,7 +6,7 @@ export default function CompanyLogo() {
         src="https://anna-maria-brandt.s3.eu-north-1.amazonaws.com/Favicon+AM+Text.png"
         className="w-8 sm:w-12 m-0"
       />
-      <div className="flex flex-col text-neutral-900">
+      <div className="flex flex-col text-[#575756]">
         <p className="uppercase text-sm tracking-normal  sm:tracking-[.15em] font-medium">Psykoterapimottagning</p>
         <p className="uppercase text-sm tracking-normal  sm:tracking-[.15em]">Anna Maria Brandt</p>
       </div>

@@ -11,9 +11,9 @@ export default function Home() {
     <div className="flex min-h-screen font-sans justify-center">
       <main className="flex min-h-screen w-full justify-center flex-col bg-white sm:items-start">
         <section className="w-full">
-          <div className="relative flex flex-col items-center justify-center px-6 py-32 gap-14 h-[600px] md:h-[800px]">
-            <img src="https://anna-maria-brandt.s3.eu-north-1.amazonaws.com/Gata.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
-            <h1 className="text-4xl lg:text-6xl max-w-5xl mx-auto text-center z-10"><b>Samtalsstöd vid relationstrauma </b>
+          <div className="relative flex flex-col items-center justify-end px-6 py-32 gap-14 h-[650px] md:h-[800px]">
+            <img src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
+            <h1 className="text-2xl lg:text-6xl max-w-5xl mx-auto text-center z-10 text-white"><b>Samtalsstöd vid relationstrauma </b>
               när något gått sönder på insidan</h1>
             <PrimaryButton
               title="Boka kostnadsfritt första samtal"
@@ -52,11 +52,11 @@ export default function Home() {
           <div className="max-w-7xl mx-auto py-24 flex flex-col md:flex-row gap-32 relative flex-wrap">
             <div className="flex flex-col gap-8 flex-1">
               <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" />
-              <p className="text-neutral-900 text-center text-xl font-bold italic">“Narcissistens största misstag är att underskatta empatens förmåga att återhämta sig”</p>
+              <p className="text-[#727272] text-center text-xl font-bold italic">“Narcissistens största misstag är att underskatta empatens förmåga att återhämta sig”</p>
               <img className="rounded-3xl" src="/images/brygga.jpg" alt="" />
             </div>
 
-            <div className="flex flex-col gap-8 text-neutral-900 text-xl/8 flex-2">
+            <div className="flex flex-col gap-8 text-[#727272] text-xl/8 flex-2">
               <p className="font-medium">Välkommen,
                 <br /><br />
                 Som legitimerad psykoterapeut har jag specialiserat mig på relationella kriser och familjetrauman. Med över 20 års erfarenhet har jag arbetat med trauma i olika kliniska miljöer, inklusive Röda Korsets behandlingscenter för tortyr- och krigsskadade, företagshälsovården och i min egen privata praktik. Genom åren har jag hjälpt människor att bearbeta smärtsamma livserfarenheter och hitta vägar mot läkning och återhämtning.
@@ -110,7 +110,7 @@ export default function Home() {
           <img src="/images/brygga2.jpg"
             alt=""
             className="rounded-full w-42 md:w-[700px] aspect-square object-cover" />
-          <p className="text-neutral-900 text-xl/8 md:text-2xl italic font-bold md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-2/3 md:-translate-y-1/2">
+          <p className="text-[#727272] text-xl/8 md:text-2xl italic font-bold md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-2/3 md:-translate-y-1/2">
             “Varningsflaggor handlar inte bara om den andre personen. När du börjar ljuga för dig själv om vem de är för att undvika att förlora dem.
             <br />
             <br />
@@ -145,7 +145,7 @@ export default function Home() {
           {/* Intro */}
           <div className="flex flex-col max-w-7xl mx-auto gap-16 py-24">
             <UnderlineHeader as="h2" text="Relationer definierar inte vem du är, eller vem du blivit" />
-            <div className="flex flex-col gap-8 text-neutral-900 text-xl/8">
+            <div className="flex flex-col gap-8 text-[#727272] text-xl/8">
               <p className=" font-semibold">
                 Relationer kan vara utmanande, och svåra erfarenheter kan förändra hur vi ser på oss själva, andra och livet omkring oss. Destruktiva relationer kan lämna oss med ett brustet hjärta och känslor av maktlöshet. Vi tystnar, avskärmar oss och känner oss ensamma. Men även i den djupaste smärtan finns möjligheten till förändring.
               </p>
@@ -195,7 +195,7 @@ export default function Home() {
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24 max-w-7xl mx-auto">
             {tjanster.map(tjanst => {
               return (
-                <div key={tjanst.slug} className="flex flex-col gap-8 text-neutral-900">
+                <div key={tjanst.slug} className="flex flex-col gap-8 text-[#727272]">
                   {/* <img src={tjanst.image} alt="" className="w-full object-cover aspect-square" /> */}
                   <h3 className="text-2xl font-medium">{tjanst.name}</h3>
                   <p className="text-lg -mt-4">{tjanst.description}</p>
@@ -209,7 +209,7 @@ export default function Home() {
             })}
           </div>
 
-          <div className="flex flex-col gap-2 text-neutral-900 justify-center items-center">
+          <div className="flex flex-col gap-2 text-[#727272] justify-center items-center">
             <p className="text-2xl font-semibold">
               Jag samarbetar med <a className="underline text-blue-900" target="_blank" href="https://socialtstod.stockholm/hitta-familjeradgivning/familjeradgivning/allvarligt-talat-stockholms-familjeradgivare">Allvarligt talat</a> och <a className="underline text-blue-900" target="_blank" href="https://www.parsamtal.com">Parsamtal</a>
             </p>
@@ -245,8 +245,8 @@ export default function Home() {
           <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row gap-14">
             <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1733892149214-SL5DXQ69QUHF4H0UKE0P/image-asset.jpeg?format=1500w" alt=""
               className="w-62 object-cover aspect-square rounded-full self-center md:w-148" />
-            <div className=" text-neutral-900 text-lg md:text-xl flex flex-col gap-4">
-              <UnderlineHeader as="h2" text="Boka ditt första samtal" className="text-4xl lg:text-5xl font-medium text-neutral-900" />
+            <div className=" text-[#727272] text-lg md:text-xl flex flex-col gap-4">
+              <UnderlineHeader as="h2" text="Boka ditt första samtal" className="text-4xl lg:text-5xl font-medium text-[#727272]" />
               <p className="mt-4">
                 Mitt mål som terapeut är att erbjuda dig en trygg och stödjande miljö där du kan utforska dina tankar och känslor.
               </p>

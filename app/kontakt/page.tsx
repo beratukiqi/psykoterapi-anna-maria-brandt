@@ -10,7 +10,7 @@ export default function Kontakt() {
       <main className="flex w-full flex-col bg-white sm:items-start">
         <section className="px-6 py-12 md:py-32 pb-42 max-w-7xl mx-auto">
           {/* Intro */}
-          <div className="flex flex-col gap-12 text-xl/8 text-neutral-900">
+          <div className="flex flex-col gap-12 text-xl/8 text-[#727272]">
             <UnderlineHeader as="h1" text="Välkommen att kontakta mig" className="text-4xl font-medium mb-4" />
             {/* <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" /> */}
             <p>

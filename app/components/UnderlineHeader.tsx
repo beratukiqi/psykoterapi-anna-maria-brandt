@@ -16,7 +16,7 @@ export default function UnderlineHeader<T extends ElementType = "h2">({
 
   return (
     <Component
-      className={`${className ? className : 'text-neutral-900 text-4xl md:text-6xl font-medium'}`}
+      className={`${className ? className : 'text-[#434343] text-4xl md:text-6xl font-medium'}`}
       {...props}
     >
       <span className="fancy-underline">{text}</span>

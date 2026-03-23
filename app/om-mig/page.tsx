@@ -9,7 +9,7 @@ export default function OmMig() {
       <main className="flex min-h-screen w-full flex-col bg-white sm:items-start">
         <section className="px-6 py-12 md:py-32 pb-42 max-w-7xl mx-auto">
           {/* Intro */}
-          <div className="flex flex-col gap-12 text-xl/8 text-neutral-900">
+          <div className="flex flex-col gap-12 text-xl/8 text-[#727272]">
             <UnderlineHeader as="h1" text="Om mig" />
 
             <div className="grid grid-cols-1 lg:grid-cols-2 gap-8">

@@ -45,12 +45,12 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-6">
-          <a href="/" className="text-sm/6 md:text-lg font-semibold text-gray-900">
+          <a href="/" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
             Hem
           </a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 md:text-lg font-semibold text-gray-900">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 md:text-lg font-semibold text-[#575756]">
               Tjänster
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
             </PopoverButton>
@@ -66,7 +66,7 @@ export default function Header() {
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 md:text-lg hover:bg-gray-50"
                   >
                     <div className="flex-auto">
-                      <a href={`/tjanster/${item.slug}`} className="block font-semibold text-gray-900">
+                      <a href={`/tjanster/${item.slug}`} className="block font-semibold text-[#575756]">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
@@ -77,13 +77,13 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="/om-mig" className="text-sm/6 md:text-lg font-semibold text-gray-900">
+          <a href="/om-mig" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
             Om mig
           </a>
-          <a href="/fragor-och-svar" className="text-sm/6 md:text-lg font-semibold text-gray-900">
+          <a href="/fragor-och-svar" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
             Frågor och svar
           </a>
-          <a href="/kontakt" className="text-sm/6 md:text-lg font-semibold text-gray-900">
+          <a href="/kontakt" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
             Kontakt
           </a>
         </PopoverGroup>
@@ -115,12 +115,12 @@ export default function Header() {
               <div className="space-y-2 py-6 mt-8">
                 <a
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
                 >
                   Hem
                 </a>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-4xl/7 font-medium text-gray-900 hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50">
                     Tjänster
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
                   </DisclosureButton>
@@ -130,7 +130,7 @@ export default function Header() {
                         key={tjanst.slug}
                         as="a"
                         href={`/tjanster/${tjanst.slug}`}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-2xl/7 font-medium text-gray-900 hover:bg-gray-50"
+                        className="block rounded-lg py-2 pr-3 pl-6 text-2xl/7 font-medium text-[#575756] hover:bg-gray-50"
                       >
                         {tjanst.name}
                       </DisclosureButton>
@@ -139,19 +139,19 @@ export default function Header() {
                 </Disclosure>
                 <a
                   href="/om-mig"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
                 >
                   Om mig
                 </a>
                 <a
                   href="/fragor-och-svar"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
                 >
                   Frågor & svar
                 </a>
                 <a
                   href="/kontakt"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-gray-900 hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
                 >
                   Kontakt
                 </a>
