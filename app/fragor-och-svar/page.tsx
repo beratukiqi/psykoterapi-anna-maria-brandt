@@ -5,38 +5,21 @@ import WaveSeparatorMobile from "../components/WaveSeperatorMobile";
 
 const fragorOchSvar = [
   {
-    question: "Var är jag belägen?",
-    answer: "Min mottagning ligger på Övre Slottsgatan 32B i uppsala."
+    question: "Hur går det till?",
+    answer: "Psykodynamisk psykoterapi innebär ett nära samarbete mellan psykoterapeut och klient inom ramen för en trygg relation och ett samarbetskontrakt. Detta är en terapiform där du som klient vid varje samtal har möjlighet att prata om det som för stunden upptar dig. Behandlingen sker inom fastställda ramar vad gäller tider för samtal, arvode och frekvens. Första mötet är alltid ett bedömningssamtal. Bedömningssamtalet leder till en behandlingsöverenskommelse där vi ringar in dina behov samt önskemål med psykoterapin. Antalet bedömningssamtal vid en psykoterapi kan variera men är i regel tre till antalet. I bland kan en konsultation räcka om man behöver enstaka råd över en aspekt av sitt liv, eller hjälp med att stanna upp och orientera sig. Behöver du arbeta fokuserat med en speciell problematik är det vanligt att gå 5-20 gånger. I en långtidsterapi (över 20 gånger) är det ett annat arbetssätt. Då arbetar man löpande med det som dyker upp i stunden och får på så sätt en mer omfattande självutveckling. Att känna förtroende för sin terapeut, ha en gemensam plan och arbeta mot ett gemensamt mål är viktigt."
   },
   {
-    question: "Hur fungerar terapi online?",
-    answer: "Online terapi genomförs digitalt via FaceTime, WhatsApp, även Zoom där du kan ha terapisessioner bekvämt från din egen plats. Optimalt är självklart att ses IRL, men om geografi och logistik omöjliggör det är digitala möten numera en väl fungerande möjlighet att kunna mötas på avstånd. "
+    question: "När kan man söka psykoterapi?",
+    answer: "Det kan vara till stor hjälp att söka psykoterapi när du upplever att du har ett psykiskt lidande som är svårt att bemästra eller komma till rätta med själv. De flesta söker psykoterapi just för att det är något som bekymrar dem. Ibland är det svårt att sätta ord på vad det är man behöver och vill förändra och då kan psykoterapin till en början handla om att identifiera det som ”skaver.” Personliga kriser där symptomen utgörs av nedstämdhet, ångest,stress och rädslor, sömnbesvär, vissa somatiska besvär är exempel på när psykoterapi kan vara till hjälp. Vid obearbetade förluster, svåra upplevelser och minnen, relationsproblem, privat eller i arbetet/skolan, är också stunder i livet då det kan vara skönt att ha en utomstående professionell samtalspartner. I terapin får man vara som man är och behöver inte ta hänsyn till andra."
   },
   {
-    question: "Vad kostar det?",
-    answer: "Avgiften för individuella sessioner är 1500 kronor per session. Förlängda sessioner á 2 timmar debiteras 2500 kronor. För par- eller familjesamtal är avgiften 2500 kronor per session. "
+    question: "Video eller telefonsamtal?",
+    answer: "Jag erbjuder psykoterapi via telefon och video. Du kan då ladda ner appen Signal som krypterar meddelanden, röstsamtal och videochatt. Den finns både till mobiler och datorer för Android och IOS. Den är lika enkel att använda som Messenger eller Whatsapp, men är säkrare. Varje terapisession via nätet eller telefon är upplagd på samma sätt som om de genomförs på mottagningen och pågår 45 minuter."
   },
   {
-    question: "Hur långa är sessionerna?",
-    answer: "Sessionerna varierar i längd. Individuella sessioner är ca 60 minuter, medan par- eller familjesamtal normalt varar i 2-2,5 timmar. Reser man långt eller vill fördjupa samtalet och kanske ha något längre mellanrum mellan träffarna är två timmars sessioner en väl investering, det sparar både på restid och pengar. "
+    question: "Tystnadsplikt?",
+    answer: "Som legitimerad psykoterapeut har jag tystnadsplikt, det innebär att det som du säger till mig för jag inte vidare. Jag för journal eftersom det är något som vi legitimerade psykoterapeuter är skyldiga att göra enligt lag, Patientdatalagen (PDL). Det är endast jag som har tillgång till din journal. Tystnadsplikten kan hävas i vissa fall. Det kan exempelvis vara att en minderårig far mycket illa eller vid misstanke om allvarligare brott."
   },
-  {
-    question: "Vad kan jag förvänta mig under mitt första samtal?",
-    answer: "Under ditt första bedömningssamtal kommer du att få möjlighet att dela dina skäl för att söka terapi, din historik och dina mål. Jag kommer ställa frågor för att lära känna dig bättre och bedöma dina behov. Det är också viktigt att du tar  möjligheten att ställa frågor om terapiprocessen."
-  },
-  {
-    question: "Hur länge behöver jag vara i terapi?",
-    answer: "Terapins längd varierar beroende på dina symtom och vad du behöver hjälp med. Tillsammans kommer vi att samarbeta för att fastställa den mest lämpliga varaktigheten baserat på ditt framsteg och dina mål."
-  },
-  {
-    question: "Täcker en försäkring?",
-    answer: "De flesta försäkringsbolag täcker kostnaden för terapisessioner. Jag rekommenderar att du talar med ditt försäkringsbolag för att få mer information om din täckning och eventuella processer som krävs för att få ersättning för terapikostnader."
-  },
-  {
-    question: "Hur bokar jag en tid?",
-    answer: "Det första samtalet är kostnadsfritt. Följ länken nedan så kan du välja dag och tid som passar ditt schema. "
-  },
-
 ]
 export default function FragorOchSvar() {
   return (
@@ -56,11 +39,11 @@ export default function FragorOchSvar() {
             <div key={index} className="flex flex-col text-[#727272]">
               <h2 className="text-xl font-bold">{item.question}</h2>
               <p className="text-lg">{item.answer}</p>
-              {index === 0 && (
+              {/* {index === 0 && (
                 <div className="hidden md:block mt-6">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.46997642643!2d18.05620927762092!3d59.33746281036909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e296940001%3A0xb35170e8f21ad828!2sPsykoterapimottagning%20Anna%20Maria%20Brandt!5e1!3m2!1sen!2sse!4v1768277147845!5m2!1sen!2sse" width="100%" height="400" loading="lazy"></iframe>
                 </div>
-              )}
+              )} */}
             </div>
           ))}
 
