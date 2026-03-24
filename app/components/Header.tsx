@@ -45,12 +45,12 @@ export default function Header() {
           </button>
         </div>
         <PopoverGroup className="hidden lg:flex lg:gap-x-6">
-          <a href="/" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
+          <a href="/" className="text-sm/6 md:text-lg text-[#4A4A4A]">
             Hem
           </a>
 
           <Popover className="relative">
-            <PopoverButton className="flex items-center gap-x-1 text-sm/6 md:text-lg font-semibold text-[#575756]">
+            <PopoverButton className="flex items-center gap-x-1 text-sm/6 md:text-lg text-[#4A4A4A] hover:cursor-pointer">
               Tjänster
               <ChevronDownIcon aria-hidden="true" className="size-5 flex-none text-gray-400" />
             </PopoverButton>
@@ -66,7 +66,7 @@ export default function Header() {
                     className="group relative flex items-center gap-x-6 rounded-lg p-4 text-sm/6 md:text-lg hover:bg-gray-50"
                   >
                     <div className="flex-auto">
-                      <a href={`/tjanster/${item.slug}`} className="block font-semibold text-[#575756]">
+                      <a href={`/tjanster/${item.slug}`} className="block text-[#4A4A4A]">
                         {item.name}
                         <span className="absolute inset-0" />
                       </a>
@@ -77,20 +77,20 @@ export default function Header() {
             </PopoverPanel>
           </Popover>
 
-          <a href="/om-mig" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
+          <a href="/om-mig" className="text-sm/6 md:text-lg text-[#4A4A4A]">
             Om mig
           </a>
-          <a href="/fragor-och-svar" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
+          <a href="/fragor-och-svar" className="text-sm/6 md:text-lg text-[#4A4A4A]">
             Frågor och svar
           </a>
-          <a href="/kontakt" className="text-sm/6 md:text-lg font-semibold text-[#575756]">
+          <a href="/kontakt" className="text-sm/6 md:text-lg text-[#4A4A4A]">
             Kontakt
           </a>
         </PopoverGroup>
         <div className="hidden lg:flex lg:flex-1 lg:justify-end">
           <PrimaryButton
             white
-            title="Boka kostnadsfritt första samtal"
+            title="Boka tid"
             link="/kontakt"
             className="ml-8"
           />
@@ -113,25 +113,25 @@ export default function Header() {
           </div>
           <div className="h-full flex justify-start mt-16">
             <div className="-mt-16 flex flex-col w-full divide-y divide-gray-500/10 h-full">
-              <div className="space-y-2 py-6 mt-8">
+              <div className="space-y-6 py-6 mt-8">
                 <a
                   href="/"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-light text-[#4A4A4A] hover:bg-gray-50"
                 >
                   Hem
                 </a>
                 <Disclosure as="div" className="-mx-3">
-                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50">
+                  <DisclosureButton className="group flex w-full items-center justify-between rounded-lg py-2 pr-3.5 pl-3 text-4xl/7 font-light text-[#4A4A4A] hover:bg-gray-50">
                     Tjänster
                     <ChevronDownIcon aria-hidden="true" className="size-5 flex-none group-data-open:rotate-180" />
                   </DisclosureButton>
-                  <DisclosurePanel className="mt-2 space-y-2">
+                  <DisclosurePanel className="mt-6 space-y-4">
                     {tjanster.map((tjanst) => (
                       <DisclosureButton
                         key={tjanst.slug}
                         as="a"
                         href={`/tjanster/${tjanst.slug}`}
-                        className="block rounded-lg py-2 pr-3 pl-6 text-2xl/7 font-medium text-[#575756] hover:bg-gray-50"
+                        className="block rounded-lg py-2 pr-3 pl-6 text-2xl/7 font-light text-[#4A4A4A] hover:bg-gray-50"
                       >
                         {tjanst.name}
                       </DisclosureButton>
@@ -140,19 +140,19 @@ export default function Header() {
                 </Disclosure>
                 <a
                   href="/om-mig"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-light text-[#4A4A4A] hover:bg-gray-50"
                 >
                   Om mig
                 </a>
                 <a
                   href="/fragor-och-svar"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-light text-[#4A4A4A] hover:bg-gray-50"
                 >
                   Frågor & svar
                 </a>
                 <a
                   href="/kontakt"
-                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-medium text-[#575756] hover:bg-gray-50"
+                  className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-light text-[#4A4A4A] hover:bg-gray-50"
                 >
                   Kontakt
                 </a>
@@ -160,7 +160,7 @@ export default function Header() {
               <div className="py-6 mt-auto">
                 <PrimaryButton
                   white
-                  title="Boka kostnadsfritt första samtal"
+                  title="Boka tid"
                   link="#"
                 />
               </div>

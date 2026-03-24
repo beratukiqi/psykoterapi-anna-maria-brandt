@@ -5,6 +5,7 @@ import { tjanster } from "./data/tjanster";
 import WaveSeparator from "./components/WaveSeperator";
 import WaveSeparatorMobile from "./components/WaveSeperatorMobile";
 import UnderlineHeader from "./components/UnderlineHeader";
+import OutlineButton from "./components/OutlineButton";
 
 export default function Home() {
   return (
@@ -13,10 +14,9 @@ export default function Home() {
         <section className="w-full">
           <div className="relative flex flex-col items-center justify-end px-6 py-32 gap-14 h-[650px] md:h-[800px]">
             <img src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
-            <h1 className="text-2xl lg:text-6xl max-w-5xl mx-auto text-center z-10 text-white"><b>Samtalsstöd vid relationstrauma </b>
-              när något gått sönder på insidan</h1>
+            <h1 className="text-2xl lg:text-6xl max-w-5xl mx-auto text-center z-10 text-white">Psykoterapi för ungdomar, vuxna & par</h1>
             <PrimaryButton
-              title="Boka kostnadsfritt första samtal"
+              title="Boka tid"
               link="/kontakt"
               white
               className="z-10"
@@ -51,34 +51,13 @@ export default function Home() {
           {/* Intro */}
           <div className="max-w-7xl mx-auto py-24 flex flex-col md:flex-row gap-32 relative flex-wrap">
             <div className="flex flex-col gap-8 flex-1">
-              <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" />
-              <p className="text-[#727272] text-center text-xl font-bold italic">“Narcissistens största misstag är att underskatta empatens förmåga att återhämta sig”</p>
-              <img className="rounded-3xl" src="/images/brygga.jpg" alt="" />
+              {/* <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" /> */}
+              <p className="text-[#727272] text-center text-xl font-bold italic">“Här tas tankar och känslor emot med intresse, kunskap och erfarenhet.”</p>
+              <img className="rounded-3xl saturate-0" src="/images/brygga.jpg" alt="" />
             </div>
 
             <div className="flex flex-col gap-8 text-[#727272] text-xl/8 flex-2">
-              <p className="font-medium">Välkommen,
-                <br /><br />
-                Som legitimerad psykoterapeut har jag specialiserat mig på relationella kriser och familjetrauman. Med över 20 års erfarenhet har jag arbetat med trauma i olika kliniska miljöer, inklusive Röda Korsets behandlingscenter för tortyr- och krigsskadade, företagshälsovården och i min egen privata praktik. Genom åren har jag hjälpt människor att bearbeta smärtsamma livserfarenheter och hitta vägar mot läkning och återhämtning.
-              </p>
 
-              <p>
-                En stor del av mitt arbete handlar om att stötta individer som lever i, eller har lämnat, destruktiva och toxiska relationer - särskilt relationer präglade av narcissistiska drag och psykiskt våld. Dessa erfarenheter kan skapa djupa sår, och när barn är inblandade blir situationen ofta än mer komplex och känslomässigt påfrestande. Ofta är medberoende en avgörande faktor, präglat i oss redan från tidiga relationer i livet, vilket gör att vi fastnar i mönster som är svåra att bryta.
-              </p>
-
-              <p className="font-medium">
-                Att förstå narcissism och medberoende är första steget till förändring.
-                På min blogg delar jag användbar information, praktiska råd och verktyg som kan hjälpa dig att bättre förstå dessa komplexa relationer och hitta vägar ut ur dem. Bloggen är skapad med dig i åtanke - för att ge stöd och insikter i en svår och ofta ensam process.
-              </p>
-
-              <p>
-                Om du har kommit fram till att du behöver professionell hjälp för att hantera din situation, är du varmt välkommen. Jag erbjuder ett kostnadsfritt första samtal, där vi kan utforska din situation och se hur jag kan hjälpa dig framåt. När du har modet att söka hjälp är det avgörande att du får rätt stöd - någon som verkligen förstår de utmaningar du står inför.
-              </p>
-              <PrimaryButton
-                title="Läs mer om vad jag erbjuder"
-                link="/kontakt"
-                white
-              />
             </div>
           </div>
         </section>
@@ -109,7 +88,7 @@ export default function Home() {
         <section className="bg-white px-6 py-12 md:py-32 flex flex-col gap-16 items-center mx-auto relative">
           <img src="/images/brygga2.jpg"
             alt=""
-            className="rounded-full w-42 md:w-[700px] aspect-square object-cover" />
+            className="saturate-0 rounded-full w-42 md:w-[700px] aspect-square object-cover" />
           <p className="text-[#727272] text-xl/8 md:text-2xl italic font-bold md:absolute md:left-1/2 md:top-1/2 md:transform md:-translate-x-2/3 md:-translate-y-1/2">
             “Varningsflaggor handlar inte bara om den andre personen. När du börjar ljuga för dig själv om vem de är för att undvika att förlora dem.
             <br />
@@ -162,9 +141,10 @@ export default function Home() {
               </p>
             </div>
             <PrimaryButton
-              title="Boka kostnadsfritt första samtal"
+              title="Boka tid"
               link="/kontakt"
               className="-mt-8"
+              white
             />
           </div>
         </section>
@@ -199,10 +179,9 @@ export default function Home() {
                   {/* <img src={tjanst.image} alt="" className="w-full object-cover aspect-square" /> */}
                   <h3 className="text-2xl font-medium">{tjanst.name}</h3>
                   <p className="text-lg -mt-4">{tjanst.description}</p>
-                  <PrimaryButton
-                    title={`Läs mer om ${tjanst.name}`}
+                  <OutlineButton
+                    title={`Läs mer`}
                     link={`/tjanster/${tjanst.slug}`}
-                    white
                   />
                 </div>
               )
@@ -244,7 +223,7 @@ export default function Home() {
         <section className=" w-full px-6 py-42 gap-14 bg-[#fdf4ee]">
           <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row gap-14">
             <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1733892149214-SL5DXQ69QUHF4H0UKE0P/image-asset.jpeg?format=1500w" alt=""
-              className="w-62 object-cover aspect-square rounded-full self-center md:w-148" />
+              className="saturate-0 w-62 object-cover aspect-square rounded-full self-center md:w-148" />
             <div className=" text-[#727272] text-lg md:text-xl flex flex-col gap-4">
               <UnderlineHeader as="h2" text="Boka ditt första samtal" className="text-4xl lg:text-5xl font-medium text-[#727272]" />
               <p className="mt-4">
@@ -263,9 +242,10 @@ export default function Home() {
                 Tack för ditt förtroende!
               </p>
               <PrimaryButton
-                title="Tidsbokning"
+                title="Boka tid"
                 link="/kontakt"
                 className="mt-8"
+                white
               />
             </div>
           </div>

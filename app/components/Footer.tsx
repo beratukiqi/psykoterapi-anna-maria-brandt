@@ -13,11 +13,7 @@ export default function Footer() {
             <p className="font-bold text-xl">E-post: <a href="mailto:info@annamariabrandt.se" className="font-normal text-neutral-600 underline">info@annamariabrandt.se</a></p>
             <p className="font-bold text-xl">Mobil: <a href="tel:0723284424" className="font-normal text-neutral-600 underline">0723284424</a></p>
           </div>
-          <div className="mt-16 flex flex-col xl:mt-0 text-[#727272] gap-1">
-            <p className="font-semibold text-xl">Följ:</p>
-            <a href="https://www.instagram.com/annamariabrandt/" className="font-semibold text-lg underline">Instagram</a>
-            <a href="https://www.facebook.com/annamariabrandt/" className="font-semibold text-lg underline">Facebook</a>
-          </div>
+
         </div>
         <div className="mt-16 border-t border-gray-900/10 pt-4 sm:mt-10 lg:mt-16">
           <a href="https://www.soupscriber.com" className="text-sm/6 text-gray-600 underline">&copy; 2026 Soupscriber Solutions AB.</a>

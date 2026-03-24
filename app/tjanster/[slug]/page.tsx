@@ -28,6 +28,7 @@ export default async function Tjanst({ params }: { params: { slug: string } }) {
                       <PrimaryButton
                         title={tjanst.ctaTitle}
                         link={tjanst.ctaLink}
+                        white
                       />
                       <p className="text-[#727272] text-sm self-center">Länken tar dig vidare till Bokadirekt</p>
                     </div>
@@ -44,6 +45,7 @@ export default async function Tjanst({ params }: { params: { slug: string } }) {
                 <PrimaryButton
                   title="Kontakta oss"
                   link="/kontakt"
+                  white
                 />
 
               </div>

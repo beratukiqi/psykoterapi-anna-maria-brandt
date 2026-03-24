@@ -41,7 +41,7 @@ export const tjanster: Service[] = [
           I vår terapiprocess kommer vi arbeta tillsammans för att identifiera och bearbeta dina undvikande strategier. Jag hjälper dig att hantera din ångest och att möta de känslor du har hållit ifrån dig. Målet är att återknyta kontakten med din inre kompass, så att du kan må bättre. För att detta ska fungera är det viktigt att vi bygger en trygg relation präglad av tillit och öppenhet.
         </p>
       </div>,
-    ctaTitle: "Boka kostnadsfritt första samtal",
+    ctaTitle: "Boka tid",
     ctaLink: "https://www.psykoterapi.se/psykoterapi-samtalsterapi",
   },
   {
@@ -100,7 +100,7 @@ export const tjanster: Service[] = [
         Forskning visar att bilaterala stimuli, som ögonrörelser, underlättar skapandet av nya associationsbanor till traumatiska minnen, vilket leder till nyinlärning. Det hjälper individer att stanna kvar i minnet av traumat och bearbeta det på ett mer konstruktivt sätt.
       </p>
     </div>,
-    ctaTitle: "Boka kostnadsfritt första samtal",
+    ctaTitle: "Boka tid",
     ctaLink: "https://www.bokadirekt.se/boka-tjanst/psykoterapimottagning-anna-maria-brandt-47408/emdr-terapi-2994508",
   },
   {
@@ -136,7 +136,7 @@ export const tjanster: Service[] = [
       <p>EFT (Emotionally Focused Therapy för par) är en metod med stark forskningsbas som grundar sig i anknytnings-, humanistisk och systemisk teori. Metoden utgår från att våra känslor beskriver våra behov, värderingar och mål, både i relation till oss själva och inom kärleksrelationen. I EFT ses emotionerna som nyckeln till förändring. Istället för att stänga av eller fly från känslor—i syfte att skydda oss från känslomässig smärta—behöver vi öppna oss och både visa och uttrycka känslor. Känslorna fungerar som ett navigeringssystem för att tillgodose våra själsliga behov. När vi i vår omgivning inte får våra behov tillfredsställda blir vi frustrerade, ledsna och olyckliga. Genom att medvetandegöra dessa behov får vi viktiga insikter och nya möjligheter till att skapa tillfredsställande relationer.
       </p>
     </div>,
-    ctaTitle: "Boka kostnadsfritt första samtal",
+    ctaTitle: "Boka tid",
     ctaLink: "https://www.bokadirekt.se/boka-tjanst/psykoterapimottagning-anna-maria-brandt-47408/privat-parterapi-1859192",
   },
   // {
