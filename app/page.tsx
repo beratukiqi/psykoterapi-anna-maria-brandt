@@ -12,9 +12,12 @@ export default function Home() {
     <div className="flex min-h-screen font-sans justify-center">
       <main className="flex min-h-screen w-full justify-center flex-col bg-white sm:items-start">
         <section className="w-full">
-          <div className="relative flex flex-col items-center justify-end px-6 py-32 gap-14 h-[650px] md:h-[800px]">
-            <img src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
-            <h1 className="text-2xl lg:text-6xl max-w-5xl mx-auto text-center z-10 text-white">Psykoterapi för ungdomar, vuxna & par</h1>
+          <div className="relative flex flex-col items-center justify-end px-6 py-32 pb-26 md:pb-32 gap-4 md:gap-8 h-[650px] md:h-[800px]">
+            <picture>
+              <source media="(min-width: 768px)" srcSet="https://annamariabrandt.se/wp-content/uploads/2023/08/anna-maria-brandt-bg.jpg" />
+              <img src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" className="absolute top-0 left-0 w-full h-full object-cover z-0 brightness-75" />
+            </picture>
+            <h1 className="text-3xl lg:text-6xl max-w-3xl mx-auto text-center z-10 text-white">Psykoterapi för ungdomar, vuxna & par</h1>
             <PrimaryButton
               title="Boka tid"
               link="/kontakt"
@@ -28,7 +31,7 @@ export default function Home() {
           <div className="hidden md:block">
             <WaveSeparator
               topColor="transparent"
-              bottomColor="#fcf4ef"
+              bottomColor="#ffffff"
               strokeColor="#e5e5e5"
               strokeWidth={5}
               flipX={true}
@@ -38,7 +41,7 @@ export default function Home() {
           <div className="md:hidden">
             <WaveSeparatorMobile
               topColor="transparent"
-              bottomColor="#fcf4ef"
+              bottomColor="#ffffff"
               strokeColor="#e5e5e5"
               strokeWidth={5}
               flipX={true}
@@ -47,11 +50,47 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="w-full px-6 pt-0 pb-24 md:py-24 flex flex-col gap-16 bg-[#fdf4ee]">
+        <section className="px-6 md:px-0 py-12 md:py-32 pb-32 md:pb-52 max-w-7xl mx-auto">
           {/* Intro */}
+          <div className="flex flex-col gap-12 text-xl/8 text-[#727272]">
+            <UnderlineHeader as="h2" text="Om mig" />
+
+            {/* <img className="rounded-3xl order-1 lg:order-2" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" /> */}
+            <div className="flex flex-col gap-6">
+              <p className="font-medium">
+                Hej och varmt välkommen! Jag är en legitimerad psykoterapeut och har bland annat lång erfarenhet av vuxen- och barnsjukvård på Karolinska Universitetssjukhuset. Mitt arbete bygger på evidensbaserade och beprövade psykologiska metoder som har visat sig vara framgångsrika.
+              </p>
+              <p>
+                Jag erbjuder skräddarsydda terapeutiska behandlingar som är utformade för att stödja din personliga utveckling och ditt välmående. Genom att anpassa metoder och tekniker efter dina specifika behov skapar jag en trygg och inspirerande behandlingsmiljö. Mitt mål är att hjälpa dig öka din självinsikt och åstadkomma varaktiga förändringar i ditt liv. Tillsammans kan vi arbeta mot en mer meningsfull och balanserad tillvaro.
+              </p>
+
+              <p>
+                För mig handlar terapi om att lära sig att tycka om sig själv och att acceptera sina sårbarheter, samtidigt som vi hittar en känsla av äkta liv. Vi strävar efter att vara oss själva och att höra till i gemenskap med andra. I denna balans kan det ibland bli lätt att tappa bort sig själv, bli självkritisk och agera på sätt som inte är hållbara. I vår terapi skapar vi ett tryggt rum där du kan utforska dina behov, känslor och värderingar samt läka den smärta som ofta ligger under ytan.
+              </p>
+            </div>
+
+            <div className="flex flex-col gap-4">
+              <h2 className="text-3xl font-medium mb-4 mt-12">
+                Hur jag arbetar
+              </h2>
+              <p>
+                Terapin formas helt utifrån dina behov och önskemål. Jag är lyhörd och omsorgsfullt utmanande i mitt stöd till dig på din väg mot läkning och tillväxt. Vi kommer att fokusera på de känslor, tankar och beteenden som du upplever som problematiska. Det är vanligt att vi "vet vad vi borde göra" men ändå tvekar, eller att vi "vet att vi är uppskattade" men inte riktigt känner det. Därför riktar vi blicken mot känslorna under ytan och arbetar med att förstå, fördjupa och reglera dem. Tillsammans bygger vi en mer kärleksfull relation till dig själv. Jag integrerar gärna övningar och metoder från olika psykoterapeutiska traditioner i vårt arbete.
+              </p>
+
+              <h2 className="text-3xl font-medium mb-4 mt-12">
+                Terapins mål
+              </h2>
+              <p>
+                Vårt övergripande mål är att du ska få en genuin kontakt med ditt inre - dina känslor och din vilja - och öka möjligheterna att styra livet mot de mål du vill förverkliga. Tillsammans ska vi hitta vägen tillbaka till ett meningsfullt liv.
+              </p>
+            </div>
+
+          </div>
+        </section>
+
+        {/* <section className="w-full px-6 pt-0 pb-24 md:py-24 flex flex-col gap-16 bg-[#fdf4ee]">
           <div className="max-w-7xl mx-auto py-24 flex flex-col md:flex-row gap-32 relative flex-wrap">
             <div className="flex flex-col gap-8 flex-1">
-              {/* <img className="rounded-3xl" src="https://annamariabrandt.se/wp-content/uploads/2023/05/anna-maria-brandt.jpg" alt="" /> */}
               <p className="text-[#727272] text-center text-xl font-bold italic">“Här tas tankar och känslor emot med intresse, kunskap och erfarenhet.”</p>
               <img className="rounded-3xl saturate-0" src="/images/brygga.jpg" alt="" />
             </div>
@@ -60,32 +99,10 @@ export default function Home() {
 
             </div>
           </div>
-        </section>
+        </section> */}
 
-        <div>
-          <div className="hidden md:block">
-            <WaveSeparator
-              topColor="#fcf4ef"
-              bottomColor="#FFFFFF"
-              strokeColor="#e5e5e5"
-              strokeWidth={5}
-              flipX={true}
-              overlap={100}
-            />
-          </div>
-          <div className="md:hidden">
-            <WaveSeparatorMobile
-              topColor="#fcf4ef"
-              bottomColor="#FFFFFF"
-              strokeColor="#e5e5e5"
-              strokeWidth={5}
-              flipX={true}
-              overlap={100}
-            />
-          </div>
-        </div>
 
-        <section className="bg-white px-6 py-12 md:py-32 flex flex-col gap-16 items-center mx-auto relative">
+        {/* <section className="bg-white px-6 py-12 md:py-32 flex flex-col gap-16 items-center mx-auto relative">
           <img src="/images/brygga2.jpg"
             alt=""
             className="saturate-0 rounded-full w-42 md:w-[700px] aspect-square object-cover" />
@@ -95,9 +112,9 @@ export default function Home() {
             <br />
             Det är flaggan du ska vara särskild uppmärksam på!”
           </p>
-        </section>
+        </section> */}
 
-        <div>
+        {/* <div>
           <div className="hidden md:block">
             <WaveSeparator
               topColor="transparent"
@@ -118,10 +135,9 @@ export default function Home() {
               overlap={0}
             />
           </div>
-        </div>
+        </div> */}
 
-        <section className="w-full px-6 py-12 flex flex-col gap-16 bg-[#fdf4ee]">
-          {/* Intro */}
+        {/* <section className="w-full px-6 py-12 flex flex-col gap-16 bg-[#fdf4ee]">
           <div className="flex flex-col max-w-7xl mx-auto gap-16 py-24">
             <UnderlineHeader as="h2" text="Relationer definierar inte vem du är, eller vem du blivit" />
             <div className="flex flex-col gap-8 text-[#727272] text-xl/8">
@@ -147,12 +163,12 @@ export default function Home() {
               white
             />
           </div>
-        </section>
+        </section> */}
 
         <div>
           <div className="hidden md:block">
             <WaveSeparator
-              topColor="#fcf4ef"
+              topColor="#ffffff"
               bottomColor="#ffffff"
               strokeColor="#e5e5e5"
               strokeWidth={5}
@@ -161,7 +177,7 @@ export default function Home() {
           </div>
           <div className="md:hidden">
             <WaveSeparatorMobile
-              topColor="#fcf4ef"
+              topColor="#ffffff"
               bottomColor="#ffffff"
               strokeColor="#e5e5e5"
               strokeWidth={5}
@@ -171,7 +187,7 @@ export default function Home() {
           </div>
         </div>
 
-        <section className="px-6 py-42 w-full flex flex-col gap-32 bg-white">
+        <section className="px-6 py-42 w-full flex flex-col gap-32 bg-[#ffffff]">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-24 max-w-7xl mx-auto">
             {tjanster.map(tjanst => {
               return (
@@ -220,9 +236,9 @@ export default function Home() {
             />
           </div>
         </div>
-        <section className=" w-full px-6 py-42 gap-14 bg-[#fdf4ee]">
+        {/* <section className=" w-full px-6 py-42 gap-14 bg-[#fdf4ee]">
           <div className="max-w-[1400px] mx-auto flex flex-col md:flex-row gap-14">
-            <img src="https://images.squarespace-cdn.com/content/v1/6414a30fd9584f426a16b47a/1733892149214-SL5DXQ69QUHF4H0UKE0P/image-asset.jpeg?format=1500w" alt=""
+            <img src="/images/brygga2.jpg" alt=""
               className="saturate-0 w-62 object-cover aspect-square rounded-full self-center md:w-148" />
             <div className=" text-[#727272] text-lg md:text-xl flex flex-col gap-4">
               <UnderlineHeader as="h2" text="Boka ditt första samtal" className="text-4xl lg:text-5xl font-medium text-[#727272]" />
@@ -249,9 +265,9 @@ export default function Home() {
               />
             </div>
           </div>
-        </section>
+        </section> */}
         <div>
-          <div className="hidden md:block">
+          {/* <div className="hidden md:block">
             <WaveSeparator
               topColor="#fcf4ef"
               bottomColor="#fcf4ef"
@@ -270,7 +286,7 @@ export default function Home() {
               flipX={true}
               overlap={100}
             />
-          </div>
+          </div> */}
         </div>
       </main>
     </div >

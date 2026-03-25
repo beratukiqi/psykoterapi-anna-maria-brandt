@@ -80,8 +80,8 @@ export default function Header() {
           <a href="/om-mig" className="text-sm/6 md:text-lg text-[#4A4A4A]">
             Om mig
           </a>
-          <a href="/fragor-och-svar" className="text-sm/6 md:text-lg text-[#4A4A4A]">
-            Frågor och svar
+          <a href="/bra-att-veta" className="text-sm/6 md:text-lg text-[#4A4A4A]">
+            Bra att veta
           </a>
           <a href="/kontakt" className="text-sm/6 md:text-lg text-[#4A4A4A]">
             Kontakt
@@ -145,10 +145,10 @@ export default function Header() {
                   Om mig
                 </a>
                 <a
-                  href="/fragor-och-svar"
+                  href="/bra-att-veta"
                   className="-mx-3 block rounded-lg px-3 py-2 text-4xl/7 font-light text-[#4A4A4A] hover:bg-gray-50"
                 >
-                  Frågor & svar
+                  Bra att veta
                 </a>
                 <a
                   href="/kontakt"
