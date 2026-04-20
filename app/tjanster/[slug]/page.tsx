@@ -53,7 +53,7 @@ export default async function Tjanst({ params }: { params: { slug: string } }) {
           )}
         </section>
 
-        <div>
+        <div className="w-full">
           <div className="hidden md:block">
             <WaveSeparator
               topColor="transparent"

@@ -32,7 +32,7 @@ export default function Kontakt() {
           </div>
         </section>
 
-        <div>
+        <div className="w-full">
           <div className="hidden md:block">
             <WaveSeparator
               topColor="transparent"

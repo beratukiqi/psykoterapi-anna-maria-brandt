@@ -27,7 +27,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div>
+        <div className="w-full">
           <div className="hidden md:block">
             <WaveSeparator
               topColor="transparent"
@@ -114,7 +114,7 @@ export default function Home() {
           </p>
         </section> */}
 
-        {/* <div>
+        {/* <div className="w-full">
           <div className="hidden md:block">
             <WaveSeparator
               topColor="transparent"
@@ -165,7 +165,7 @@ export default function Home() {
           </div>
         </section> */}
 
-        <div>
+        <div className="w-full">
           <div className="hidden md:block">
             <WaveSeparator
               topColor="#ffffff"
@@ -214,7 +214,7 @@ export default function Home() {
           </div>
         </section>
 
-        <div>
+        <div className="w-full">
           <div className="hidden md:block">
             <WaveSeparator
               topColor="#ffffff"
@@ -266,8 +266,8 @@ export default function Home() {
             </div>
           </div>
         </section> */}
-        <div>
-          {/* <div className="hidden md:block">
+        {/* <div className="w-full"> */}
+        {/* <div className="hidden md:block">
             <WaveSeparator
               topColor="#fcf4ef"
               bottomColor="#fcf4ef"
@@ -287,7 +287,7 @@ export default function Home() {
               overlap={100}
             />
           </div> */}
-        </div>
+        {/* </div> */}
       </main>
     </div >
   );

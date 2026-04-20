@@ -21,7 +21,7 @@ const fragorOchSvar = [
     answer: "Betalning sker  i direkt anslutning till vårt möte via Swish eller faktura.\nAvbokning: Om du behöver boka om eller avboka din tid, vänligen gör detta via mejl senast 24 timmar innan vi ska ses. Vid senare avbokning eller uteblivet besök debiteras full avgift."
   },
 ]
-export default function FragorOchSvar() {
+export default function BraAttVeta() {
   return (
     <div className="flex min-h-screen font-sans bg-white">
       <main className="flex min-h-screen mx-auto flex-col w-full bg-white sm:items-start">
@@ -39,7 +39,7 @@ export default function FragorOchSvar() {
           {fragorOchSvar.map((item, index) => (
             <div key={index} className="flex flex-col text-[#727272]">
               <h2 className="text-xl font-bold">{item.question}</h2>
-              <p className="text-lg">{item.answer}</p>
+              <p className="text-lg whitespace-pre-wrap">{item.answer}</p>
               {/* {index === 0 && (
                 <div className="hidden md:block mt-6">
                   <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2943.46997642643!2d18.05620927762092!3d59.33746281036909!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x465f77e296940001%3A0xb35170e8f21ad828!2sPsykoterapimottagning%20Anna%20Maria%20Brandt!5e1!3m2!1sen!2sse!4v1768277147845!5m2!1sen!2sse" width="100%" height="400" loading="lazy"></iframe>
@@ -56,7 +56,7 @@ export default function FragorOchSvar() {
           />
         </section>
 
-        <div>
+        <div className="w-full">
           <div className="hidden md:block">
             <WaveSeparator
               topColor="transparent"
